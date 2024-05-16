@@ -29,7 +29,7 @@ BEGIN
         ELSIF temp_sum = "11" THEN
             h <= '0';
             z <= "10";
-        else
+        ELSE
             h <= '1';
             z <= "00";
         END IF;
@@ -37,33 +37,64 @@ BEGIN
     END PROCESS;
 END behavioral; -- behavioral
 
--- ENTITY adder IS
---     -- q {-2,-1,0,1}
---     PORT (
---         h : IN STD_LOGIC;
---         z : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
---         q : OUT STD_LOGIC_VECTOR(1 DOWNTO 0));
--- END ENTITY adder;
+-------------------------
 
--- ARCHITECTURE behavioral OF adder IS
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
 
---     SIGNAL
+ENTITY adder IS
+    -- q {-2,-1,0,1}
+    PORT (
+        h : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+        z : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+        q : OUT STD_LOGIC_VECTOR(1 DOWNTO 0));
+END ENTITY adder;
 
--- BEGIN
+ARCHITECTURE behavioral OF adder IS
+BEGIN
+    q <= STD_LOGIC_VECTOR(signed(z) + signed(h));
+END behavioral; -- behavioral
 
--- END behavioral; -- behavioral
--- ENTITY tw IS
---     -- q {-2,-1,0,1}
---     PORT (
---         h : IN STD_LOGIC;
---         z : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
---         q : OUT STD_LOGIC_VECTOR(1 DOWNTO 0));
--- END ENTITY tw;
+------------------------
 
--- ARCHITECTURE behavioral OF tw IS
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
 
---     SIGNAL
+ENTITY tw IS
+    -- q {-2,-1,0,1}
+    PORT (
+        q : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+        t : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+        w : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
+    );
+END ENTITY tw;
 
--- BEGIN
+ARCHITECTURE behavioral OF tw IS
+BEGIN
 
--- END behavioral; -- behavioral
+    PROCESS (q) BEGIN
+
+        IF q = "00" THEN
+            w <= "00";
+            t <= "00";
+        ELSIF q = "01" THEN
+            w <= "01";
+            t <= "00";
+        ELSIF q = "11" THEN
+            w <= "01";
+            t <= "11";
+        ELSIF q = "10" THEN
+            w <= "00";
+            t <= "11";
+        ELSE
+            w <= "00";
+            t <= "00";
+        END IF;
+
+    END PROCESS;
+
+END behavioral; -- behavioral
+
+
