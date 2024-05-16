@@ -6,30 +6,32 @@ USE work.mypackage.ALL;
 
 ENTITY testbench IS END ENTITY;
 ARCHITECTURE behavioral OF testbench IS
-    SIGNAL xx1 : sd_array (3 DOWNTO 0);
-    SIGNAL yy1 : sd_array (3 DOWNTO 0);
-    SIGNAL ss1 : sd_array (3 DOWNTO 0);
+    SIGNAL x : sd_array (3 DOWNTO 0);
+    SIGNAL y : sd_array (3 DOWNTO 0);
+    SIGNAL s : sd_array (3 DOWNTO 0);
 BEGIN
-    UUT : ENTITY work.Signed_digit GENERIC MAP(4) PORT MAP(xx1, yy1, ss1, cc1);
+    UUT : ENTITY work.double_recoding_adder(behavioral)
+        GENERIC MAP(4)
+        PORT MAP(x, y, s);
     PROCESS BEGIN
-        xx1(0) <= "00";
-        xx1(1) <= "01";
-        xx1(2) <= "01";
-        xx1(3) <= "00";
-        yy1(0) <= "00";
-        yy1(1) <= "11";
-        yy1(2) <= "01";
-        yy1(3) <= "01";
+        x(0) <= "00";
+        x(1) <= "01";
+        x(2) <= "01";
+        x(3) <= "00";
+        y(0) <= "00";
+        y(1) <= "11";
+        y(2) <= "01";
+        y(3) <= "01";
         WAIT FOR 50 NS;
-        xx1(0) <= "00";
-        xx1(1) <= "01";
-        xx1(2) <= "00";
-        xx1(3) <= "11";
-        yy1(0) <= "00";
-        yy1(1) <= "01";
-        yy1(2) <= "00";
-        yy1(3) <= "01";
-        wait for 50 ns;
+        x(0) <= "00";
+        x(1) <= "01";
+        x(2) <= "00";
+        x(3) <= "11";
+        y(0) <= "00";
+        y(1) <= "01";
+        y(2) <= "00";
+        y(3) <= "01";
+        WAIT FOR 50 ns;
         std.env.stop; -- or std.env.stop;
     END PROCESS;
 END ARCHITECTURE behavioral;

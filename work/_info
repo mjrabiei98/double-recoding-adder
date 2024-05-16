@@ -4,7 +4,7 @@ K3
 cModel Technology
 dC:\Users\mohammad javad\Desktop\uni\arshad tehran university\term 2\VHDL\HW\HW1\code
 Eadder
-Z0 w1715866828
+Z0 w1715866960
 Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
@@ -14,15 +14,15 @@ Z6 FC:/Users/mohammad javad/Desktop/uni/arshad tehran university/term 2/Computer
 l0
 L46
 Vb<N<MQD<o@bcNA6TMi3W93
-!s100 B=VI?C22Fa:<oHCV?@k6P0
 Z7 OV;C;10.1d;51
 32
-!i10b 1
-Z8 !s108 1715866831.981000
+Z8 !s108 1715867484.169000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/mohammad javad/Desktop/uni/arshad tehran university/term 2/Computer Arithmatic/CA/CA3/q1/double_recoding_adder.vhdl|
 Z10 !s107 C:/Users/mohammad javad/Desktop/uni/arshad tehran university/term 2/Computer Arithmatic/CA/CA3/q1/double_recoding_adder.vhdl|
 Z11 o-work work -2002 -explicit -O0
 Z12 tExplicit 1
+!s100 B=VI?C22Fa:<oHCV?@k6P0
+!i10b 1
 Abehavioral
 R1
 R2
@@ -30,19 +30,19 @@ R3
 Z13 DEx4 work 5 adder 0 22 b<N<MQD<o@bcNA6TMi3W93
 l55
 L54
-Z14 VSzj?34ZVGeOIaHT4mWoaC1
-Z15 !s100 VjRia30T^dF[3lCeo;?TS1
+VSzj?34ZVGeOIaHT4mWoaC1
+!s100 VjRia30T^dF[3lCeo;?TS1
 R7
 32
-!i10b 1
 R8
 R9
 R10
 R11
 R12
+!i10b 1
 Edouble_recoding_adder
-Z16 w1715866828
-Z17 DPx4 work 9 mypackage 0 22 ;aIJiFVo[hFCXj=aeCmMC3
+Z14 w1715866960
+Z15 DPx4 work 9 mypackage 0 22 ;aIJiFVo[hFCXj=aeCmMC3
 R1
 R2
 R3
@@ -52,38 +52,38 @@ R6
 l0
 L113
 VN7O0?]ONi[hnd]@V9AjYL3
-!s100 5LGLFHnE<zXT5oa?^dOEj2
 R7
 32
-!i10b 1
 R8
 R9
 R10
 R11
 R12
+!s100 5LGLFHnE<zXT5oa?^dOEj2
+!i10b 1
 Abehavioral
-Z18 DEx4 work 2 tw 0 22 Eo;SRRbWUQRRbOIS?4VV[3
+Z16 DEx4 work 2 tw 0 22 Eo;SRRbWUQRRbOIS?4VV[3
 R13
-Z19 DEx4 work 2 hz 0 22 X8QknGImHPA^DnI@BOF4Q3
-R17
+Z17 DEx4 work 2 hz 0 22 X8QknGImHPA^DnI@BOF4Q3
+R15
 R1
 R2
 R3
-Z20 DEx4 work 21 double_recoding_adder 0 22 N7O0?]ONi[hnd]@V9AjYL3
+Z18 DEx4 work 21 double_recoding_adder 0 22 N7O0?]ONi[hnd]@V9AjYL3
 l128
 L120
 VL7>IdoYX01[CB0]3^]WgU3
 !s100 ]g<XK]H<TdgIl;jZlc2cd2
 R7
 32
-!i10b 1
 R8
 R9
 R10
 R11
 R12
+!i10b 1
 Ehz
-R16
+R14
 R1
 R2
 R3
@@ -93,54 +93,95 @@ R6
 l0
 L5
 VX8QknGImHPA^DnI@BOF4Q3
-!s100 TfJ`DfVTA6oLB4gabf0:L1
 R7
 32
-!i10b 1
 R8
 R9
 R10
 R11
 R12
+!s100 TfJ`DfVTA6oLB4gabf0:L1
+!i10b 1
 Abehavioral
 R1
 R2
 R3
-R19
+R17
 l15
 L14
-Z21 V:h4H?HS<bLjHP]PW>=^nE0
-Z22 !s100 c]A[KE:[fL<Dcza@[@IUj0
+V:h4H?HS<bLjHP]PW>=^nE0
+!s100 c]A[KE:[fL<Dcza@[@IUj0
 R7
 32
-!i10b 1
 R8
 R9
 R10
 R11
 R12
+!i10b 1
 Pmypackage
 R1
 R2
 R3
-R16
+R14
 R4
 R5
 R6
 l0
 L103
 V;aIJiFVo[hFCXj=aeCmMC3
-!s100 CA7gOj_NOHzTkD=JjeSbd2
 R7
 32
-!i10b 1
 R8
 R9
 R10
 R11
 R12
+!s100 CA7gOj_NOHzTkD=JjeSbd2
+!i10b 1
+Etestbench
+Z19 w1715867480
+R15
+R1
+R2
+R3
+R4
+Z20 8C:/Users/mohammad javad/Desktop/uni/arshad tehran university/term 2/Computer Arithmatic/CA/CA3/q1/testbench.vhdl
+Z21 FC:/Users/mohammad javad/Desktop/uni/arshad tehran university/term 2/Computer Arithmatic/CA/CA3/q1/testbench.vhdl
+l0
+L7
+Vn9fXoUE;=Y?:KRCM1gH7k3
+!s100 Va]f[8C^V@lDFZfjU:o]Q0
+R7
+32
+!i10b 1
+Z22 !s108 1715867484.239000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/mohammad javad/Desktop/uni/arshad tehran university/term 2/Computer Arithmatic/CA/CA3/q1/testbench.vhdl|
+Z24 !s107 C:/Users/mohammad javad/Desktop/uni/arshad tehran university/term 2/Computer Arithmatic/CA/CA3/q1/testbench.vhdl|
+R11
+R12
+Abehavioral
+DPx3 std 3 env 0 22 kU@g3bh3dSQ6SKX7=V`LE3
+R18
+R15
+R1
+R2
+R3
+DEx4 work 9 testbench 0 22 n9fXoUE;=Y?:KRCM1gH7k3
+l12
+L8
+Vl;AHnWQZW6GTYdX9@I:>k3
+!s100 51cnYK1hEWjXPM0zo^69R3
+R7
+32
+!i10b 1
+R22
+R23
+R24
+R11
+R12
 Etw
-R16
+R14
 R1
 R2
 R3
@@ -150,29 +191,29 @@ R6
 l0
 L65
 VEo;SRRbWUQRRbOIS?4VV[3
-!s100 YCl]OD4cjX5EK3Ol3;08C0
 R7
 32
-!i10b 1
 R8
 R9
 R10
 R11
 R12
+!s100 YCl]OD4cjX5EK3Ol3;08C0
+!i10b 1
 Abehavioral
 R1
 R2
 R3
-R18
+R16
 l75
 L74
-Z23 VIWO[@8eXzbdL76:V@5zC:2
-Z24 !s100 1oCY[ZdSWSCjPKQ4fz5T50
+VIWO[@8eXzbdL76:V@5zC:2
+!s100 1oCY[ZdSWSCjPKQ4fz5T50
 R7
 32
-!i10b 1
 R8
 R9
 R10
 R11
 R12
+!i10b 1
